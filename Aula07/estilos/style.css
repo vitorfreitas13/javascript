@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* estilos/style.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    display: flex;
+    justify-content: center;   /* centraliza horizontalmente */
+    align-items: center;       /* centraliza verticalmente */
+    min-height: 100vh;         /* altura total da tela */
+    background-image: url(../corrida.jpg);
+    background-size: cover;
+    background-position: center top;
+}
+
+/* Título principal */
+h1 {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+    color: #ffffff;
+    font-size: 2em;
+    background-color: rgb(42, 95, 209);
+    
+}
+
+/* Main / Formulário */
+main.content {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.726);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Cada div do formulário */
+main.content div {
+    margin-bottom: 20px;
+}
+
+/* Textos dos campos */
+main.content p {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Campos de input */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+/* Foco no input */
+input[type="text"]:focus {
+    border-color: #74ebd5;
+    outline: none;
+}
+
+/* Botões de rádio */
+input[type="radio"] {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+label {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Botão enviar */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    background-color: #74ebd5;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #50a194;
+}
+
+/* Mensagem final */
+#mensagem {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}

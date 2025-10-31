@@ -3,42 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Perguntar nome na página</title>
+    <title>Corridas 2025</title>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 
 <body>
-    <h1>Inscrição para a corrida</h1>
+    <h1>Corrida da Solidariedade</h1>
 
-    <div>
-        <p>Informe o seu nome:</p>
-        <input id="nome" placeholder="Digite seu nome completo" type="text">
-    </div>
-
-    <div>
-        <p>Informe sua idade:</p>
-        <input id="idade" placeholder="Idade" type="text">
-    </div>
-
-    <div>
-        <p>Informe quantos KM você quer correr:</p>
-        <input type="radio" id="km5" name="distancia" value="5">
-        <label for="km5">5 km</label>
-
-        <input type="radio" id="km10" name="distancia" value="10">
-        <label for="km10">10 km</label>
-
-        <input type="radio" id="km15" name="distancia" value="15">
-        <label for="km15">15 km</label>
-        <br>
-    </div>
-
-    <div>
-        <button onclick="mostrarNome()">Enviar</button>
-    </div>
-
-    <div>
-        <p id="mensagem"></p>
-    </div>
+    <main class="content">
+        <div>
+            <p>Informe o seu nome:</p>
+            <input id="nome" placeholder="Digite seu nome completo" type="text">
+        </div>
+        <div>
+            <p>Informe sua idade:</p>
+            <input id="idade" placeholder="Idade" type="text">
+        </div>
+        <div>
+            <p>Informe quantos KM você quer correr:</p>
+            <input type="radio" id="km5" name="distancia" value="5">
+            <label for="km5">5 km</label>
+            <input type="radio" id="km10" name="distancia" value="10">
+            <label for="km10">10 km</label>
+            <input type="radio" id="km15" name="distancia" value="15">
+            <label for="km15">15 km</label>
+            <br>
+        </div>
+        <div>
+            <button onclick="mostrarNome()">Enviar</button>
+        </div>
+        <div>
+            <p id="mensagem"></p>
+        </div>
+    </main>
 
     <script>
         function mostrarNome() {
