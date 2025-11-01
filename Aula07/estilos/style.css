@@ -16,7 +16,7 @@ body {
     justify-content: center;   /* centraliza horizontalmente */
     align-items: center;       /* centraliza verticalmente */
     min-height: 100vh;         /* altura total da tela */
-    background-image: url(../corrida.jpg);
+    background-image: url(../imagens/corrida.jpg);
     background-size: cover;
     background-position: center top;
 }
