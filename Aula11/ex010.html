@@ -18,6 +18,7 @@
             var txtv = window.document.querySelector('input#velocidade')
             var vel = Number(velocidade.value)
             var res = window.document.querySelector('div#resultado')
+            
             res.innerHTML = `<p>A sua velocidade atual é de <strong>${vel} Km/h</strong></p>`
             if (vel > 70){
                 res.innerHTML += `<p><strong>Você foi MULTADO!</strong></p>`
