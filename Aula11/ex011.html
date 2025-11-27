@@ -49,11 +49,12 @@
         function verificacao() {
             const nacao = document.querySelector('#pais').value.toLowerCase()
             const res = document.querySelector('#resultado')
+            const formatado = nacao.charAt(0).toUpperCase() + nacao.slice(1).toLowerCase();
 
             if(nacao === "brasil"){
-                res.innerHTML = `Você veio do ${nacao} então você é Brasileiro!`
+                res.innerHTML = `Você veio do ${formatado}, então você é Brasileiro!`
             }else{
-                res.innerHTML = `Você veio do ${nacao} então você é estrangeiro!`
+                res.innerHTML = `Você nasceu em ${formatado}, então você é estrangeiro!`
             }
         }
     </script>
