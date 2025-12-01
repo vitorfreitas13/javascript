@@ -4,7 +4,6 @@ function carregar(){
     var data = new Date()
     var hora = data.getHours()
 
-    var hora = 02
     if (hora < 12 && hora > 0){
         img.src = 'fotomanha.png'
         msg.innerHTML = `Agora são ${hora} horas. BOM DIA!`
