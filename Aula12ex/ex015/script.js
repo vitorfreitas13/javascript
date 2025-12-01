@@ -11,7 +11,7 @@ function carregar(){
     } else if (hora >= 12 && hora <= 18){
         img.src = 'fototarde.png'
         msg.innerHTML = `Agora são ${hora} horas. BOA TARDE!`
-        document.body.style.background = '#dbcd51ff'
+        document.body.style.background = '#e4a32bff'
     } else {
         img.src = 'fotonoite.png'
         msg.innerHTML = `Agora são ${hora} horas. BOA NOITE`
