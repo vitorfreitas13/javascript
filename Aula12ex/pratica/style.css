@@ -4,8 +4,9 @@
     margin: 0px;
     padding: 0px;
     font-family: "Poppins", sans-serif;
-    
+
 }
+
 body {
     background-color: lightblue;
     display: flex;
@@ -26,8 +27,8 @@ header {
 
 section {
     background-color: #fff;
-    width: 80vw;
-    height: 40vh;
+    width: 400px;
+    height: 350px;
     margin: auto;
     border-radius: 20px;
 
@@ -36,10 +37,11 @@ section {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    
+    transition: 0.5s;
+
 }
 
-.opcoes{
+.opcoes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,15 +59,66 @@ section {
     color: #fff;
     background-color: green;
     border: none;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 15px;
     transition: 0.5s;
 }
 
-#botao:hover{
+#botao:hover {
     scale: 1.3;
 }
 
 footer {
     text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: rgb(217, 226, 83);
+    }
+    header > h1 {
+        font-size: 2.5em;
+        transition: 0.5s;
+    }
+
+    section {
+        font-size: 1.6em;
+        background-color: #fff;
+        width: 700px;
+        height: 350px;
+        margin: auto;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: 0.5s;
+    }
+}
+@media screen and (min-width: 1024px){
+    body{
+        background-color: lightgreen;
+    }
+
+    header > h1 {
+        font-size: 3em;
+        transition: 0.5s;
+    }
+    section {
+        font-size: 2em;
+        background-color: #fff;
+        width: 900px;
+        height: 350px;
+        margin: auto;
+        border-radius: 20px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: 0.5s;
+    }
 }
