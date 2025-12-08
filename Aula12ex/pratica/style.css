@@ -100,10 +100,13 @@ footer {
         font-size: 2.5em;
     }
 
+
     section {
         width: 650px;
         height: 350px;
     }
+
+   
 }
 
 /* ================= DESKTOP (1024px+) ================= */
@@ -122,5 +125,14 @@ footer {
         width: 900px;
         height: 350px;
         font-size: 2em;
+    }
+
+     p {
+        font-size: 0.7em;
+    }
+
+    #resultado{
+        font-size: 0.7em;
+        padding-bottom: 10px;
     }
 }
