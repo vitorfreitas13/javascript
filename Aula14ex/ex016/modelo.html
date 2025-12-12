@@ -8,33 +8,35 @@
 </head>
 <body>
     <header>
-       <h1>Verificador de Idade</h1>
+       <h1>Vamos contar</h1>
     </header>
 
     <section>
         <div>
-            <p>Ano de Nascimento:
-                <input type="number" name="txtano" id="txtano">
+            <p>Início:
+                <input type="number" name="inicio" id="inicio">
             </p>
-            <p>sexo:
-                <input type="radio" name="radsex" id="masc" checked> 
-                <label for="masc">Masculino</label>
+            <p>Fim:
+                <input type="number" name="fim" id="fim" checked> 
+                
+            </p>
+            <p>Passo:
+                <input type="number" name="passo" id="passo" checked> 
+                
+            </p>
 
-                <input type="radio" name="radsex" id="fem">
-                <label for="fem">Feminino</label>
-            </p>
             <p>
-                <input type="button" value="Verificar" onclick="verificar()">
+                <input type="button" value="Contar" onclick="verificar()">
             </p>
         </div>
-        <div id="res">
+        <div class="resultado">
             Preencha os dados acima para ver o resultado!
         </div>
     
     </section>
 
     <footer>
-        <p> &copy; CursoemVideo</p>
+        <p> &copy; Desenvolvedor</p>
     </footer>
     <script src="script.js"></script>
 </body>
