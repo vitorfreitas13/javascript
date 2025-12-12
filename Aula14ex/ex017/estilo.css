@@ -17,9 +17,49 @@ section {
     background-color: #fff;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    width: 300px;
+    min-height: 400px;
     margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza horizontalmente */
+    gap: 15px;           /* espaçamento */
+    text-align: center;
 }
+
+
+.res {
+    border: 1px solid black;
+    width: 260px;   /* menor que os 300px da section */
+    height: 250px;
+    text-align: center;
+    padding: 10px;  /* opcional, melhora o visual */
+    overflow-y: auto;  /* deixa rolar caso passe do tamanho */
+    border-radius: 10px;
+}
+
+
+
+input#numero {
+    width: 60px;
+}
+
+.botao{
+    background-color: green;
+    border: none;
+    color: #fff;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+.botao:hover{
+    scale: 1.2;
+}
+
 
 footer {
     color: #fff;
