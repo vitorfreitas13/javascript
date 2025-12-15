@@ -42,3 +42,6 @@ function verificar() {
     // 4. Exibir o Resultado
     res.innerHTML += resultadoContagem + '🏁'; 
 }
+
+
+//finalizando atividade/video
