@@ -1,14 +1,17 @@
-function verificar() {
-    var numero = document.querySelector('#numero');
-    var resultado = document.querySelector('.res');
-    var contador = 1
-    var num = Number(numero.value);
-    
-
-    resultado.innerHTML = ''; // limpa antes de mostrar
-
-    for (var contador = 1; contador <= 10; contador++) {
-        var soma = num * contador
-        resultado.innerHTML += `${contador} x ${num} = ${soma}  <br> `;
+function tabuada() {
+    let numero = document.querySelector('#numero');
+    let tab = document.querySelector('#seltab');
+    if (numero.value.length == 0){
+        window.alert('Por favor, digite um número!')
+    } else {
+        let n = Number(numero.value);
+        let c = 1
+        tab.innerHTML =''
+        while (c <= 10){
+            let item = document.createElement('option')
+            item.text = ` ${n} x ${c} = ${n*c}`
+            tab.appendChild(item)
+            c++
+        }
     }
 }
