@@ -1,6 +1,8 @@
 function tabuada() {
     let numero = document.querySelector('#numero');
     let tab = document.querySelector('#seltab');
+
+    
     if (numero.value.length == 0){
         window.alert('Por favor, digite um número!')
     } else {

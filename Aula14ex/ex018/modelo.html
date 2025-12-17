@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TABUADA</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
+
 <body>
     <header>
         <h1 class="title">TABUADA</h1>
@@ -16,16 +18,16 @@
             <p>
                 Digite um número:
                 <input type="number" id="num">
-                <input type="button" id= "botao" value="Gerar Tabuada">
+                <input type="button" id="botao" value="Gerar Tabuada" onclick="tabuada()">
             </p>
         </div>
 
-        <div>
-            <select name="tab" id="seltab">
-                    <option value="tabela">Resultados serão mostrados aqui!</option>
-            </select>
+        <div id="resultado">
+            <ul id="seltab" style="list-style:none; padding-left:0;">O resultado aparecerá aqui!</ul>
         </div>
+
     </section>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
