@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans", sans-serif;
+    
+}
+body {
+    background-color: rgb(49, 49, 194);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #fff;
+}
+
+section {
+    background-color: #fff;
+    width: 500px;
+    height: 300px;
+    margin: auto;
+}
+
+.container {
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+    gap: 15px;               /* espaço entre os elementos */
+    padding: 20px;
+}
+
+.content p {
+    font-weight: 500;
+}
+
+.number {
+    border: none;
+    outline: none;
+    width: 150px;
+    text-align: center;
+    height: 25px;
+    box-shadow: 0px 0px 5px black;
+    font-weight: 700;
+}
+
+.button-add {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.button-add:hover {
+    cursor: pointer;
+    scale: calc(1.05);
+    background-color: rgb(4, 187, 4);
+}
+
+.content2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;               /* espaço entre os elementos */
+    padding: 20px 0;         /* só top e bottom */
+}
+
+.tabela {
+    width: 300px;
+    border: none;
+    background-color: gray;
+    color: #fff;
+    border-radius: 20px 20px 0px 0px;
+    padding: 5px;
+    font-weight: 500;
+    outline: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
