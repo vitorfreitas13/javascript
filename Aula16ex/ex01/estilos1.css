@@ -33,11 +33,23 @@ section {
 }
 
 .content {
-    display: flex;
-    justify-content: center; /* centraliza horizontalmente */
-    align-items: center;     /* centraliza verticalmente */
-    gap: 15px;               /* espaço entre os elementos */
     padding: 20px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.select-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
 }
 
 .content p {
@@ -69,6 +81,22 @@ section {
     background-color: rgb(4, 187, 4);
 }
 
+#finalizar {
+   background-color: green;
+    color: #fff;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 50px;
+    transition: 0.2s; 
+    margin-top: 20px;
+}
+
+#finalizar:hover {
+    cursor: pointer;
+    scale: calc(1.05);
+    background-color: rgb(4, 187, 4);
+}
+
 .content2 {
     display: flex;
     justify-content: center;
@@ -80,9 +108,9 @@ section {
 .tabela {
     width: 300px;
     border: none;
-    background-color: gray;
+    background-color: rgb(218, 218, 218);
     color: #fff;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 10px;
     padding: 5px;
     font-weight: 500;
     outline: none;

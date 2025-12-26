@@ -1,18 +1,28 @@
-function adicionar() {
-    // 1. Obter o valor do input
-    var num = document.querySelector('.number');
-    var i = Number(num.value); // converte para número
+let num = document.querySelector('input#numero')
+let lista = document.querySelector('select#tabela')
+let res = document.querySelector('div.content2')
+let valores = []
 
-    // 2. Validação
-    if (num.value.trim() === "") {
-        window.alert('Você não pode deixar o campo vazio! Adicione um número e tente novamente!');
-        return; // interrompe a função se estiver vazio
-    } else if (i === 0 || i > 100){
-        window.alert('Número Invalido! Tente novamente');
-         return; // interrompe a função se o número for 0 ou maior que 100
+function isNumero(n){
+    if (Number(n) > 1 && Number(n) <= 100){
+        return true
     } else {
-        
+        return false
     }
+}
 
-    // Se passar na validação, você pode continuar
+function inLista(n, l){
+    if (l.indexOf(Number(n)) != -1 ){
+        return true
+    } else {
+        return false
+    }
+}
+
+function adicionar() {
+    if (isNumero(num.value) && !inLista(num.value, valores)){
+        
+    } else {
+        window.alert('Valor inválido ou já encontrado na lista.')
+    }
 }
