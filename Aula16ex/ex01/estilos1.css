@@ -30,10 +30,12 @@ section {
 .container {
     background-color: antiquewhite;
     border-radius: 20px;
+    transition: 0.3s;
 }
 
 .content {
     padding: 20px;
+    padding-bottom: 0px;
 }
 
 .inputs {
@@ -103,6 +105,7 @@ section {
     align-items: center;
     gap: 15px;               /* espaço entre os elementos */
     padding: 20px 0;         /* só top e bottom */
+    flex-direction: column;
 }
 
 .tabela {
